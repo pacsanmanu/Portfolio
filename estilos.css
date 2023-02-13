@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 @keyframes circulo{
     from{clip-path: circle(0% at 50% 50%);}
     to{clip-path: circle(50.0% at 50% 50%);}
     }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+    
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: rgb(196, 17, 17); }
+}
+
 body{
     width: 100%;
     height: 100%;
     padding: 0px;
     margin: 0px;
-    font-family: 'Poppins';
+    font-family: 'Source Code Pro';
 }
 
 main{
@@ -24,10 +34,22 @@ main{
     height: 100%;
 }
 
+.hero-bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -4;
+}
+
 .hero-img{
     height: auto;
     width: 40%;
     margin-top: 3%;
+    filter: drop-shadow(1px 1px 30px black);
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .sections{
@@ -36,13 +58,33 @@ main{
     width: 20%;
 }
 
-.s1, .s2, .s3, .s4{
+.s1, .s4{
     transition: width 0.5s;
     width: 20%;
 }
 
-.s1:hover, .s2:hover, .s3:hover, .s4:hover{
+.s2{
+    transition: width 0.5s;
+    width: 25%;
+}
+
+.s3{
+    transition: width 0.5s;
+    width: 18%;
+}
+
+.s1:hover, .s4:hover{
     width: 22%;
+    filter: drop-shadow(1px 1px 3px #000000);
+}
+
+.s2:hover{
+    width: 27%;
+    filter: drop-shadow(1px 1px 3px #000000);
+}
+
+.s3:hover{
+    width: 20%;
     filter: drop-shadow(1px 1px 3px #000000);
 }
 
@@ -64,5 +106,30 @@ margin-left: 75%;
 
 .info{
     margin-left: 2%;
+    margin-top: 8%;
+}
+
+.hello{
+    font-size: 24px;
+}
+
+.line{
+    color: gray;
+    font-size: 24px;
+}
+
+.info h1{
     margin-top: 12%;
+    overflow: hidden;
+    border-right: .15em solid rgb(201, 14, 14);
+    white-space: nowrap;
+    letter-spacing: .15em;
+    background-color: rgba(255, 0, 0, 0.144);
+    animation: 
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.info .presentation{
+    margin-top: 10%;
 }
