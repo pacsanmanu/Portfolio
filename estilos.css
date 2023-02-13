@@ -45,7 +45,7 @@ main{
     height: auto;
     width: 40%;
     margin-top: 3%;
-    filter: drop-shadow(1px 1px 30px black);
+    filter: drop-shadow(1px 1px 7px black);
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
