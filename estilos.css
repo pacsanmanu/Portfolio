@@ -43,8 +43,8 @@ main{
 
 .hero-img{
     height: auto;
-    width: 40%;
-    margin-top: 3%;
+    width: 37%;
+    margin-top: 5%;
     filter: drop-shadow(1px 1px 4px black);
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -53,6 +53,7 @@ main{
 }
 
 .sections{
+    margin-left: 2%;
     display: grid;
     margin-top: 8%;
     width: 20%;
