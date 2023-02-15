@@ -15,11 +15,6 @@ from, to { border-color: transparent }
 50% { border-color: rgb(196, 17, 17); }
 }
 
-@keyframes border-blink{
-    from{border-bottom-width: 2px; border-color: #b90000; border-bottom-style: solid;}
-    to{border-bottom-width: 0px;}
-}
-
 body{
     width: 100%;
     height: 100%;
@@ -131,14 +126,28 @@ margin-left: 75%;
     letter-spacing: .15em;
     background-color: rgba(255, 0, 0, 0.144);
     animation: 
-        typing 2.5s steps(40, end),
+        typing 2s steps(60, end),
         blink-caret .75s step-end infinite;
 }
 
 .presentation{
     margin-top: 10%;
-    animation: border-blink 1s infinite;
 }
+
+.presentation:after {
+    margin: 2%;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #dd0e0e;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+
+.presentation:hover:after {
+    transform: scaleX(1); 
+}
+
+.presentation:after{ transform-origin:0% 50%; }
 
 .location{
     margin-top: 20%;
