@@ -17,27 +17,27 @@
 }
 
 @keyframes percent1{
-    0% { width: 0 }
+    0% { width: 82% }
     100% { width: 85% }
 }
 
 @keyframes percent2{
-    0% { width: 0 }
+    0% { width: 52% }
     100% { width: 55% }
 }
 
 @keyframes percent3{
-    0% { width: 0 }
+    0% { width: 77% }
     100% { width: 80% }
 }
 
 @keyframes percent4{
-    0% { width: 0 }
+    0% { width: 87% }
     100% { width: 90% }
 }
 
 @keyframes percent5{
-    0% { width: 0 }
+    0% { width: 57% }
     100% { width: 60% }
 }
 
@@ -69,6 +69,7 @@ main{
     width: 100%;
     position: absolute;
     z-index: -4;
+    position: fixed;
 }
 
 .hero-img{
@@ -255,32 +256,26 @@ margin-left: 75%;
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent1 12s infinite alternate;
+    animation: percent1 1.5s infinite alternate;
 }
 
 .secondbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent2 12s infinite alternate;
+    animation: percent2 1.5s infinite alternate;
 }
 
 .thirdbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent3 12s infinite alternate;
-}
-
-.pacman{
-    margin-top: -27%;
-    margin-left: 11%;
-    transform: rotate(270deg );
+    animation: percent3 1.5s infinite alternate;
 }
 
 .secondblock{
     width: 30%;
-    margin-left: 13%;
+    margin-left: 38%;
 }
 
 .secondblock p{
@@ -292,20 +287,97 @@ margin-left: 75%;
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent1 12s infinite alternate;
+    animation: percent1 1.5s infinite alternate;
 }
 
 .fifthbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent4 12s infinite alternate;
+    animation: percent4 1.5s infinite alternate;
 }
 
 .sixthbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent5 12s infinite alternate;
+    animation: percent5 1.5s infinite alternate;
 }
 
+#formation{
+    width: 100%;
+    margin-top: 5%;
+}
+
+#formation h1{
+    padding: 1%;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1%;
+    margin-left: 43%;
+    margin-right: 43%;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #df0000;
+}
+
+.formation-container{
+    margin-top: 7%;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.formation-block{
+    color: white;
+    width: 45%;
+    display: flex;
+    height: 15%;
+    background-color: #b10000;
+    filter: drop-shadow(1px 1px 3px black);
+}
+
+.formation-block img{
+    width: 40%;
+    height: 20%;
+}
+
+.formation-2nd{
+    margin-left: 10%;
+}
+
+.formation-3rd{
+    margin-top: 6%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.formation-3rd img{
+    overflow: hidden;
+    width: 35%;
+    height: 20%;
+}
+
+.formation-block div{
+    width: auto;
+}
+
+.formation-block p{
+    margin: 8%;
+    font-size: 1vw;
+}
+
+.formation-3rd p{
+    margin: 7%;
+}
+
+.titulation{
+    font-weight: 800;
+    font-size: 1.15vw;
+}
+
+#experience{
+    margin-top: 5%;
+}
