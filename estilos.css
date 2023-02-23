@@ -248,7 +248,7 @@ margin-left: 75%;
 
 .bar{
     width: 100%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.342);
     filter: drop-shadow(0px 0px 3px black);
 }
 
@@ -337,11 +337,18 @@ margin-left: 75%;
     height: 15%;
     background-color: #b10000;
     filter: drop-shadow(1px 1px 3px black);
+    transition: 2s;
+
 }
 
 .formation-block img{
     width: 40%;
     height: 20%;
+}
+
+.formation-block:hover{
+    width: 48%;
+    transition: 2s;
 }
 
 .formation-2nd{
@@ -352,6 +359,12 @@ margin-left: 75%;
     margin-top: 6%;
     margin-left: 25%;
     width: 50%;
+    transition: 2s;
+}
+
+.formation-3rd:hover{
+    width: 53%;
+    transition: 2s;
 }
 
 .formation-3rd img{
@@ -379,5 +392,80 @@ margin-left: 75%;
 }
 
 #experience{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#experience h1{
+    padding: 1%;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 1%;
+    margin-left: 43%;
+    margin-right: 43%;
+    display: block;
+    content: '';
+    border-bottom: solid 3px #df0000;
+}
+
+.experience-block{
+    margin-top: 7%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    }
+
+.experience-block img{
     margin-top: 5%;
+    width: 40%;
+    margin-left: 5%;
+    height: auto;
+    padding: none;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.glassmorphism-block{
+    margin-top: 1.5%;
+    margin-left: 35%;
+    z-index: -1;
+    position: absolute;
+    height: 45%;
+    width: 33%;
+    background: rgba(255, 255, 255, 0.342);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.glassmorphism-block2{
+    z-index: -2;
+    position: absolute;
+    height: 52%;
+    width: 70%;
+    background: rgb(202, 0, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.job{
+    margin-top: 6%;
+    width: 100%;
+    margin-left: 7%;
+    font-size: 1vw;
+}
+
+.job-title{
+    font-weight: 800;
+    font-size: 1.25vw;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+#contacto{
+    margin-top: 10%;
 }
