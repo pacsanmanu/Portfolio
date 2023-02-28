@@ -408,7 +408,7 @@ margin-left: 75%;
     border-bottom: solid 3px #df0000;
 }
 
-.experience-block{
+.experience-block1{
     margin-top: 7%;
     width: 70%;
     margin-left: auto;
@@ -416,7 +416,7 @@ margin-left: 75%;
     display: flex;
     }
 
-.experience-block img{
+.experience-block1 img{
     margin-top: 5%;
     width: 40%;
     margin-left: 5%;
@@ -427,12 +427,12 @@ margin-left: 75%;
 
 .glassmorphism-block{
     margin-top: 1.5%;
-    margin-left: 35%;
+    margin-left: 25%;
     z-index: -1;
     position: absolute;
     height: 45%;
-    width: 33%;
-    background: rgba(255, 255, 255, 0.342);
+    width: 43%;
+    background: rgba(255, 255, 255, 0.205);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
     backdrop-filter: blur(5px);
@@ -440,10 +440,11 @@ margin-left: 75%;
 }
 
 .glassmorphism-block2{
+    transition: 1s;
+    width: 0px;
+    height: 0%;
     z-index: -2;
     position: absolute;
-    height: 52%;
-    width: 70%;
     background: rgb(202, 0, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.596);
@@ -452,10 +453,16 @@ margin-left: 75%;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.experience-block1:hover .glassmorphism-block2{
+    height: 52%;
+    width: 70%;
+    transition: 1s;
+}
+
 .job{
     margin-top: 6%;
     width: 100%;
-    margin-left: 7%;
+    margin-left: 4%;
     font-size: 1vw;
 }
 
@@ -464,6 +471,10 @@ margin-left: 75%;
     font-size: 1.25vw;
     margin-top: 5%;
     padding-bottom: 5%;
+}
+
+.experience-block{
+    display: none;
 }
 
 #contacto{
