@@ -263,21 +263,21 @@ margin-left: 75%;
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent1 1.5s infinite alternate;
+    animation: percent1 1s infinite alternate;
 }
 
 .secondbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent2 1.5s infinite alternate;
+    animation: percent2 1s infinite alternate;
 }
 
 .thirdbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent3 1.5s infinite alternate;
+    animation: percent3 1s infinite alternate;
 }
 
 .secondblock{
@@ -294,21 +294,21 @@ margin-left: 75%;
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent1 1.5s infinite alternate;
+    animation: percent1 1s infinite alternate;
 }
 
 .fifthbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent4 1.5s infinite alternate;
+    animation: percent4 1s infinite alternate;
 }
 
 .sixthbarinside{
     background-color: #c40000;
     height: 25px;
     width: 85%;
-    animation: percent5 1.5s infinite alternate;
+    animation: percent5 1s infinite alternate;
 }
 
 #formation{
@@ -714,8 +714,15 @@ border-bottom-right-radius: var(--radius);
 }
 
 @media (max-width: 900px){
+    .not-at-responsive{
+        display: none;
+    }
     .hero-container{
-        margin-top: 15%;
+        margin-top: 13%;
+    }
+    .hero-bg{
+        height: 100%;
+        top: 0;
     }
     .sections{
         display: none;
@@ -728,7 +735,7 @@ border-bottom-right-radius: var(--radius);
         margin-top: 5%;
     }
     .info h1{
-        font-size: 3vw;
+        font-size: 2.8vw;
     }
     .line{
         font-size: 2.5vw;
@@ -747,4 +754,91 @@ border-bottom-right-radius: var(--radius);
         margin-top: 10%;
         font-size: 1.7vw;
     }
+    .socials img{
+        width: 35%;
+    }
+    .socials img:last-child{
+        margin-left: 30%;
+    }
+    #skills{
+        margin-top: 20%;
+    }
+    #skills h1{
+        font-size: 3vw;
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    .bars{
+        margin-top: 15%;
+    }
+    .bars p{
+        font-size: 2.4vw;
+        margin-top: 19%;
+    }
+    .bar{
+        height: 15px;
+    }
+    .firstbarinside{
+        height: 15px;
+    }
+    .secondbarinside{
+        height: 15px;
+    }
+    .thirdbarinside{
+        height: 15px;
+    }
+    .fourthbarinside{
+        height: 15px;
+    }
+    .fifthbarinside{
+        height: 15px;
+    }
+    .sixthbarinside{
+        height: 15px;
+    }
+    #formation{
+        margin-top: 15%;
+    }
+    #formation h1{
+        font-size: 3vw;
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    .formation-container{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: 15%;
+        display: block;
+    }
+    .formation-block{
+        width: 100%;
+    }
+    .formation-block:last-child{
+        margin-top: 10%;
+    }
+    .formation-2nd{
+        margin-left: 0%;
+    }
+    .formation-3rd{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .formation-3rd img{
+        width: 70%;
+    }
+    .titulation{
+        font-size: 1vw;
+    }
+    .formation-block p{
+        font-size: 2vw;
+    }
+    #experience{
+        margin-top: 15%;
+    }
+    #experience h1{
+        font-size: 3vw;
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    
 }
