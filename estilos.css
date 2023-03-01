@@ -824,7 +824,7 @@ border-bottom-right-radius: var(--radius);
         margin-left: 15%;
     }
     .formation-3rd img{
-        width: 72%;
+        width: 70%;
     }
     .titulation{
         font-size: 1vw;
@@ -839,6 +839,72 @@ border-bottom-right-radius: var(--radius);
         font-size: 3vw;
         margin-left: 38%;
         margin-right: 38%;
+    }
+    .experience-block1{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 15%;
+    }
+    .glassmorphism-block{
+        display: none;
+    }
+    .glassmorphism-block2{
+        display: none;
+    }
+    .job-title{
+        font-size: 2.5vw;
+    }
+    .job-info p{
+        font-size: 2vw;
+    }
+    .experience-block1:hover .job{
+        color: black;
+    }
+    .experience-block1 button{
+        height: 17%;
+        width: 55%;
+        font-size: 2vw;
+    }
+    .experience-block1 img{
+        width: 50%;
+        margin-top: 7%;
+    }
+    .experience-block2{
+        margin-top: 20%
+    }
+    .wave{
+        margin-top: 18%
+    }
+    .bucket{
+        width: 13%;
+    }
+    .experience-block2 img{
+        margin-left: 10%;
+        width: 50%;
+    }
+    .metaverses-info{
+        margin-left: 50%;
+        margin-top: 0%;
+    }
+    .metaverses-info h1{
+        line-height: 23px;
+        font-size: 1.8vw;
+    }
+    .metaverses-info span{
+        font-size: 3vw;
+    }
+    ul{
+        display: none;
+    }
+    .button-arounder2{
+        margin-top: 0%;
+        margin-left: 35%;
+        font-size: 2vw;
+        height: 25px;
+        width: 50%;
+    }
+    .celebrating{
+        margin-top: -45%;
     }
     
 }
