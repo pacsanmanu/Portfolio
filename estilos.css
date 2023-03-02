@@ -199,12 +199,13 @@ margin-left: 75%;
     position: absolute;
     display: flex;
     width: 10%;
-    margin-top: 3%
+    margin-top: 3%;
+    margin-left: -1%;
 }
 
 .socials img{
     opacity: 0.7;
-    width: 25%;
+    width: 55%;
     height: auto;
     transition: opacity 1s;
 }
@@ -344,23 +345,24 @@ margin-left: 75%;
     height: 15%;
     background-color: #ff000080;
     filter: drop-shadow(1px 1px 3px black);
-    transition: 2s;
+    transition: 1s !important;
 
 }
 
 .formation-block img{
-    transition: 1s;
+    transition: 1s !important;
     filter: grayscale(100%);
     width: 40%;
     height: 20%;
 }
 
 .formation-block:hover{
+    transition: 2s !important;
     background-color: #b10000;
 }
 
 .formation-block:hover img{
-    transition: 1s;
+    transition: 2s !important;
     filter: grayscale(0%);
 }
 
@@ -435,7 +437,7 @@ margin-left: 75%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    transition: 2s;
+    transition: 2s !important;
 }
 
 .glassmorphism-block{
@@ -445,7 +447,7 @@ margin-left: 75%;
     position: absolute;
     height: 38%;
     width: 37%;
-    background: rgba(255, 255, 255, 0.459);
+    background: rgba(255, 255, 255, 0.651);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
     transition: 2s;
@@ -458,9 +460,9 @@ margin-left: 75%;
     width: 65%;
     z-index: -2;
     position: absolute;
-    background: rgba(82, 75, 75, 0.486);
+    background: rgba(223, 223, 223, 0.247);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.596);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.192);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -533,12 +535,12 @@ margin-left: 75%;
     border-radius: 20px;
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(90%);
     margin-left: 15%;
-    transition: 2s;
+    transition: 2s !important;
 }
 
 .experience-block2 img:hover{
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
-    transition: 2s;
+    transition: 2s !important;
 }
 
 .metaverses-info{
@@ -580,7 +582,7 @@ ul{
     width: 100%;
 }
 
-#contacto{
+#contact{
     margin-top: 10%;
     background-color: white;
 }
@@ -594,7 +596,7 @@ ul{
 .contact-container{
     margin-top: 5%;
     width: 50%;
-    margin-left: 38%;
+    margin-left: 34.5%;
     font-size: 1vw;
     display: flex;
 }
@@ -610,7 +612,7 @@ ul{
 }
 
 .contact-linkedin:hover{
-    filter: drop-shadow(1px 1px 3px #ff00008e);
+    filter: drop-shadow(1px 1px 3px #ff0000b7);
     transition: 0.5s;
 }
 
@@ -620,7 +622,7 @@ ul{
 }
 
 .contact-email:hover{
-    filter: drop-shadow(1px 1px 3px #ff00008e);
+    filter: drop-shadow(1px 1px 3px #ff0000b7);
     transition: 0.5s;
 }
 
@@ -630,8 +632,22 @@ ul{
 }
 
 .contact-github:hover{
-    filter: drop-shadow(1px 1px 3px #ff00008e);
+    filter: drop-shadow(1px 1px 5px #ff0000b7);
     transition: 0.5s;
+}
+
+.contact-cv{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.contact-cv:hover{
+    filter: drop-shadow(1px 1px 5px #ff0000b7);
+    transition: 0.5s;
+}
+
+.cv{
+    font-size: 1.5vw;
 }
 
 .responsive-space{
@@ -755,7 +771,7 @@ border-bottom-right-radius: var(--radius);
         font-size: 1.7vw;
     }
     .socials img{
-        width: 35%;
+        width: 70%;
     }
     .socials img:last-child{
         margin-left: 30%;
@@ -870,13 +886,14 @@ border-bottom-right-radius: var(--radius);
         margin-top: 7%;
     }
     .experience-block2{
-        margin-top: 20%
+        margin-top: 30%
     }
     .wave{
-        margin-top: 18%
+        margin-top: 28%
     }
     .bucket{
         width: 13%;
+        margin-top: 19%;
     }
     .experience-block2 img{
         margin-left: 10%;
@@ -887,7 +904,7 @@ border-bottom-right-radius: var(--radius);
         margin-top: 0%;
     }
     .metaverses-info h1{
-        line-height: 23px;
+        line-height: 120%;
         font-size: 1.8vw;
     }
     .metaverses-info span{
@@ -904,7 +921,19 @@ border-bottom-right-radius: var(--radius);
         width: 50%;
     }
     .celebrating{
-        margin-top: -45%;
+        margin-top: -62%;
+        height: 90%;
+    }
+    #contact{
+        margin-top: 40%
+    }
+    #contact h1{
+        font-size: 3vw;
+        margin-left: 22%;
+    }
+    .contact-container{
+        width: 70%;
+        margin-left: 27%;
     }
     
 }
