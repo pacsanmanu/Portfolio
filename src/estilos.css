@@ -445,9 +445,9 @@ margin-left: 75%;
     margin-left: 25%;
     z-index: -1;
     position: absolute;
-    height: 38%;
+    height: 35vh;
     width: 37%;
-    background: rgba(255, 255, 255, 0.651);
+    background: #a30000c0;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
     transition: 2s;
@@ -501,6 +501,11 @@ margin-left: 75%;
     font-size: 1.15vw;
     margin-top: 2%;
     padding-bottom: 5%;
+    color: white;
+}
+
+.job-info{
+    color: white;
 }
 
 .experience-block1 button{
@@ -656,7 +661,7 @@ ul{
 /* Experience buttons styles */
 .button-arounder {
 
-background: hsl(190deg, 30%, 15%);
+background: hsl(0, 0%, 29%);
 color: hsl(190deg, 10%, 95%);
 
 box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
