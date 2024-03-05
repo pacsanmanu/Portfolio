@@ -530,6 +530,13 @@ margin-left: 75%;
     height: auto;
 }
 
+.clouds{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
 .experience-block2{
     display: flex;
     width: 100%;
@@ -547,6 +554,37 @@ margin-left: 75%;
 .experience-block2 img:hover{
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
     transition: 2s !important;
+}
+
+.experience-block3{
+    display: flex;
+    width: 100%;
+    margin-top: 22%;
+}
+
+#proxya-info{
+    margin-top: 6%;
+}
+
+.experience-block3 img{
+    width: 45%;
+    border-radius: 20px;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(90%);
+    margin-left: 15%;
+    transition: 2s !important;
+}
+
+.experience-block3 img:hover{
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
+    transition: 2s !important;
+}
+
+.experience-block3 ul p{
+    color: white;
+}
+
+.experience-block3 li{
+    color: white;
 }
 
 .metaverses-info{
@@ -590,6 +628,7 @@ ul{
 
 #contact{
     margin-top: 10%;
+    color: white;
 }
 
 #contact h1{
@@ -893,7 +932,13 @@ border-bottom-right-radius: var(--radius);
     .experience-block2{
         margin-top: 30%
     }
+    .experience-block3{
+        margin-top: 30%
+    }
     .wave{
+        margin-top: 28%
+    }
+    .clouds{
         margin-top: 28%
     }
     .bucket{
@@ -901,6 +946,10 @@ border-bottom-right-radius: var(--radius);
         margin-top: 19%;
     }
     .experience-block2 img{
+        margin-left: 10%;
+        width: 50%;
+    }
+    .experience-block3 img{
         margin-left: 10%;
         width: 50%;
     }
