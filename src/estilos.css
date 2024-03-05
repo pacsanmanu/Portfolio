@@ -1,57 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-@keyframes circulo{
-    from{clip-path: circle(0% at 50% 50%);}
-    to{clip-path: circle(50.0% at 50% 50%);}
+@keyframes circulo {
+    from {
+        clip-path: circle(0% at 50% 50%);
     }
 
-@keyframes typing{
-    from { width: 0 }
-    to { width: 100% }
+    to {
+        clip-path: circle(50.0% at 50% 50%);
     }
-    
-@keyframes blink-caret{
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
     from,
-    to { border-color: transparent }
-    50% { border-color: rgb(196, 17, 17); }
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(196, 17, 17);
+    }
 }
 
-@keyframes percent1{
-    0% { width: 82% }
-    100% { width: 85% }
+@keyframes percent1 {
+    0% {
+        width: 82%
+    }
+
+    100% {
+        width: 85%
+    }
 }
 
-@keyframes percent2{
-    0% { width: 77% }
-    100% { width: 82% }
+@keyframes percent2 {
+    0% {
+        width: 77%
+    }
+
+    100% {
+        width: 82%
+    }
 }
 
-@keyframes percent3{
-    0% { width: 77% }
-    100% { width: 80% }
+@keyframes percent3 {
+    0% {
+        width: 77%
+    }
+
+    100% {
+        width: 80%
+    }
 }
 
-@keyframes percent4{
-    0% { width: 87% }
-    100% { width: 90% }
+@keyframes percent4 {
+    0% {
+        width: 87%
+    }
+
+    100% {
+        width: 90%
+    }
 }
 
-@keyframes percent5{
-    0% { width: 57% }
-    100% { width: 60% }
+@keyframes percent5 {
+    0% {
+        width: 57%
+    }
+
+    100% {
+        width: 60%
+    }
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-html{
+html {
     scroll-behavior: smooth
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -59,18 +100,18 @@ body{
     font-family: 'Source Code Pro';
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
 }
 
-.hero-container{
+.hero-container {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.hero-bg{
+.hero-bg {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -78,7 +119,7 @@ main{
     position: fixed;
 }
 
-.hero-img{
+.hero-img {
     height: auto;
     width: 37%;
     margin-top: 5%;
@@ -89,74 +130,76 @@ main{
     -o-user-drag: none;
 }
 
-.sections{
+.sections {
     margin-left: 2%;
     display: grid;
     margin-top: 8%;
     width: 20%;
 }
 
-.s1, .s4{
+.s1,
+.s4 {
     transition: width 0.5s;
     width: 20%;
 }
 
-.s2{
+.s2 {
     transition: width 0.5s;
     width: 25%;
 }
 
-.s3{
+.s3 {
     transition: width 0.5s;
     width: 18%;
 }
 
-.s1:hover, .s4:hover{
+.s1:hover,
+.s4:hover {
     width: 20.5%;
     filter: drop-shadow(1px 1px 3px #000000);
 }
 
-.s2:hover{
+.s2:hover {
     width: 25.5%;
     filter: drop-shadow(1px 1px 3px #000000);
 }
 
-.s3:hover{
+.s3:hover {
     width: 18.5%;
     filter: drop-shadow(1px 1px 3px #000000);
 }
 
-.s1{
-margin-left: 75%;
+.s1 {
+    margin-left: 75%;
 }
 
-.s2{
-margin-left: 50%;
+.s2 {
+    margin-left: 50%;
 }
 
-.s3{
-margin-left: 50%;
+.s3 {
+    margin-left: 50%;
 }
 
-.s4{
-margin-left: 75%;
+.s4 {
+    margin-left: 75%;
 }
 
-.info{
+.info {
     margin-left: 2%;
     margin-top: 8%;
 }
 
-.hello{
+.hello {
     font-size: 1.3vw;
 }
 
-.line{
+.line {
     color: gray;
     font-size: 1.3vw;
 }
 
-.info h1{
+.info h1 {
     font-size: 2vw;
     margin-top: 15%;
     overflow: hidden;
@@ -164,12 +207,12 @@ margin-left: 75%;
     white-space: nowrap;
     letter-spacing: .15em;
     background-color: rgba(255, 0, 0, 0.144);
-    animation: 
+    animation:
         typing 2.5s steps(60, end),
         blink-caret .75s step-end infinite;
 }
 
-.presentation{
+.presentation {
     font-size: 1vw;
     font-weight: 800;
     margin-top: 10%;
@@ -180,23 +223,25 @@ margin-left: 75%;
     margin: 2%;
     display: block;
     content: '';
-    border-bottom: solid 3px #dd0e0ebd;  
-    transform: scaleX(0);  
+    border-bottom: solid 3px #dd0e0ebd;
+    transform: scaleX(0);
     transition: transform 250ms ease-in-out;
-  }
-
-.presentation:hover:after {
-    transform: scaleX(1); 
 }
 
-.presentation:after{ transform-origin:0% 50%; }
+.presentation:hover:after {
+    transform: scaleX(1);
+}
 
-.location{
+.presentation:after {
+    transform-origin: 0% 50%;
+}
+
+.location {
     font-size: 1vw;
     margin-top: 20%;
 }
 
-.socials{
+.socials {
     position: absolute;
     display: flex;
     width: 10%;
@@ -204,30 +249,30 @@ margin-left: 75%;
     margin-left: -1%;
 }
 
-.socials img{
+.socials img {
     opacity: 0.7;
     width: 55%;
     height: auto;
     transition: opacity 1s;
 }
 
-.socials img:hover{
+.socials img:hover {
     opacity: 1;
     height: auto;
     filter: drop-shadow(1px 1px 3px #ff00008e);
 }
 
-.socials img:last-child{
+.socials img:last-child {
     margin-left: 20%;
 }
 
-#skills{
+#skills {
     width: 100%;
     margin-top: 12%;
     padding-bottom: 10%;
 }
 
-#skills h1{
+#skills h1 {
     padding: 1%;
     text-align: center;
     font-size: 2vw;
@@ -239,86 +284,86 @@ margin-left: 75%;
     border-bottom: solid 3px #df0000;
 }
 
-.bars{
+.bars {
     display: flex;
     width: 70%;
     margin-left: 16%;
     margin-top: 5%;
 }
 
-.firstblock{
+.firstblock {
     width: 30%;
 }
 
-.firstblock p{
+.firstblock p {
     font-size: 1.2vw;
     margin-top: 15%;
 }
 
-.bar{
+.bar {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.342);
     filter: drop-shadow(0px 0px 3px black);
 }
 
-.firstbarinside{
+.firstbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent1 1s infinite alternate;
 }
 
-.secondbarinside{
+.secondbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent2 1s infinite alternate;
 }
 
-.thirdbarinside{
+.thirdbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent3 1s infinite alternate;
 }
 
-.secondblock{
+.secondblock {
     width: 30%;
     margin-left: 38%;
 }
 
-.secondblock p{
+.secondblock p {
     margin-top: 15%;
     font-size: 1.2vw;
 }
 
-.fourthbarinside{
+.fourthbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent1 1s infinite alternate;
 }
 
-.fifthbarinside{
+.fifthbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent4 1s infinite alternate;
 }
 
-.sixthbarinside{
+.sixthbarinside {
     background-color: #c40000;
     height: 25px;
     width: 85%;
     animation: percent5 1s infinite alternate;
 }
 
-#formation{
+#formation {
     width: 100%;
     margin-top: 5%;
 }
 
-#formation h1{
+#formation h1 {
     padding: 1%;
     text-align: center;
     font-size: 2vw;
@@ -330,7 +375,7 @@ margin-left: 75%;
     border-bottom: solid 3px #df0000;
 }
 
-.formation-container{
+.formation-container {
     margin-top: 7%;
     width: 80%;
     display: flex;
@@ -339,7 +384,7 @@ margin-left: 75%;
     color: white;
 }
 
-.formation-block{
+.formation-block {
     color: white;
     width: 45%;
     display: flex;
@@ -350,64 +395,64 @@ margin-left: 75%;
 
 }
 
-.formation-block img{
+.formation-block img {
     transition: 1s !important;
     filter: grayscale(100%);
     width: 40%;
     height: 20%;
 }
 
-.formation-block:hover{
+.formation-block:hover {
     transition: 2s !important;
     background-color: #b10000;
 }
 
-.formation-block:hover img{
+.formation-block:hover img {
     transition: 2s !important;
     filter: grayscale(0%);
 }
 
-.formation-2nd{
+.formation-2nd {
     margin-left: 10%;
 }
 
-.formation-3rd{
+.formation-3rd {
     margin-top: 6%;
     margin-left: 25%;
     width: 50%;
     transition: 2s;
 }
 
-.formation-3rd img{
+.formation-3rd img {
     overflow: hidden;
     width: 35%;
     height: 20%;
 }
 
-.formation-block div{
+.formation-block div {
     width: auto;
 }
 
-.formation-block p{
+.formation-block p {
     margin: 8%;
     font-size: 1vw;
 }
 
-.formation-3rd p{
+.formation-3rd p {
     margin: 7%;
 }
 
-.titulation{
+.titulation {
     font-weight: 800;
     font-size: 1.15vw;
 }
 
-#experience{
+#experience {
     width: 100%;
     margin-top: 10%;
 }
 
-.experience-title{
+.experience-title {
     padding: 1%;
     text-align: center;
     font-size: 2vw;
@@ -419,77 +464,7 @@ margin-left: 75%;
     border-bottom: solid 3px #df0000;
 }
 
-.experience-block1{
-    margin-top: 7%;
-    width: 70%;
-    max-height: 600px ;
-    margin-left: 18%;
-    display: flex;
-    }
-
-.experience-block1 img{
-    border-radius: 10px;
-    margin-top: 5%;
-    width: 50%;
-    margin-left: 5%;
-    height: auto;
-    padding: none;
-    filter:grayscale(100%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: 2s !important;
-}
-
-.glassmorphism-block{
-    margin-top: 2%;
-    margin-left: 25%;
-    z-index: -1;
-    position: absolute;
-    height: 35vh;
-    width: 37%;
-    background: #a30000c0;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.281);
-    transition: 2s;
-}
-
-.glassmorphism-block2{
-    transition: 2s;
-    opacity: 0;
-    height: 52%;
-    width: 65%;
-    z-index: -2;
-    position: absolute;
-    background: rgba(223, 223, 223, 0.349);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.192);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.experience-block1:hover .glassmorphism-block2{
-    opacity: 1;
-    transition: 2s;
-}
-
-.experience-block1:hover .glassmorphism-block{
-    background: #07326bd2;
-    transition: 2s;
-}
-
-.experience-block1:hover .job{
-    color: white;
-    transition: 2s;
-}
-
-.experience-block1:hover img{
-    filter: grayscale(0%);
-    transition: 1.5s;
-}
-
-.job{
+.job {
     margin-top: 6%;
     width: 100%;
     margin-left: 4%;
@@ -497,7 +472,7 @@ margin-left: 75%;
     transition: 2s;
 }
 
-.job-title{
+.job-title {
     font-weight: 800;
     font-size: 1.15vw;
     margin-top: 2%;
@@ -505,68 +480,63 @@ margin-left: 75%;
     color: white;
 }
 
-.job-info{
+.job-info {
     color: white;
 }
 
-.experience-block1 button{
-    margin-top: 2%;
-    width: 35%;
-    height: 10%;
-}
-
-.bucket{
+.bucket {
     position: absolute;
     width: 7%;
     margin-left: 20%;
-    margin-top: 9%;
+    margin-top: 14%;
 }
 
-.wave{
-    margin-top: 12%;
+.wave {
+    margin-top: 5%;
     position: absolute;
     z-index: -1;
     width: 100%;
     height: auto;
 }
 
-.clouds{
+.clouds {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: auto;
 }
 
-.experience-block2{
+.experience-block {
     display: flex;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
+    padding-bottom: 2%;
 }
 
-.experience-block2 img{
+.experience-block img {
     width: 45%;
     border-radius: 20px;
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(90%);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(100%);
     margin-left: 15%;
     transition: 2s !important;
 }
 
-.experience-block2 img:hover{
+.experience-block img:hover {
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
     transition: 2s !important;
 }
 
-.experience-block3{
+.experience-block2 {
     display: flex;
     width: 100%;
     margin-top: 22%;
 }
 
-#proxya-info{
+#proxya-info {
     margin-top: 6%;
 }
 
-.experience-block3 img{
+.experience-block2 img {
     width: 45%;
     border-radius: 20px;
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(90%);
@@ -574,51 +544,59 @@ margin-left: 75%;
     transition: 2s !important;
 }
 
-.experience-block3 img:hover{
+.experience-block2 img:hover {
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
     transition: 2s !important;
 }
 
-.experience-block3 ul p{
+.experience-block2 ul p {
     color: white;
 }
 
-.experience-block3 li{
+.experience-block2 li {
     color: white;
 }
 
-.metaverses-info{
+.scientia-info {
     position: absolute;
     margin-left: 60%;
+    margin-right: 10%;
     margin-top: 3%;
 }
 
-.metaverses-info h1{
+.scientia-info h1 {
     margin-left: 15%;
     font-size: 1.4vw;
     margin-top: 10%;
     line-height: 50px;
 }
 
-.metaverses-info span{
+.scientia-info span {
     font-size: 1.75vw;
     color: rgb(221, 221, 221);
 }
 
-ul{
+ul {
     margin-left: 12%;
     list-style: square;
     font-size: 0.8vw;
 }
 
-.button-arounder2{
+.button-arounder1 {
+    margin-left: 15%;
+    margin-top: 5%;
+    height: 30px;
+    width: 22%;
+}
+
+.button-arounder2 {
     margin-left: 15%;
     margin-top: 5%;
     height: 30px;
     width: 40%;
 }
 
-.celebrating{
+.celebrating {
     z-index: -3;
     position: absolute;
     margin-top: -22%;
@@ -626,18 +604,18 @@ ul{
     width: 100%;
 }
 
-#contact{
+#contact {
     margin-top: 10%;
     color: white;
 }
 
-#contact h1{
+#contact h1 {
     margin-left: 32%;
     margin-top: 15%;
     font-size: 2vw;
 }
 
-.contact-container{
+.contact-container {
     margin-top: 5%;
     width: 50%;
     margin-left: 34.5%;
@@ -645,349 +623,387 @@ ul{
     display: flex;
 }
 
-.contact-container a{
+.contact-container a {
     width: 8%;
     margin: 4%;
 }
 
-.contact-linkedin{
+.contact-linkedin {
     width: 100%;
     transition: 0.5s;
 }
 
-.contact-linkedin:hover{
+.contact-linkedin:hover {
     filter: drop-shadow(1px 1px 3px #ff0000b7);
     transition: 0.5s;
 }
 
-.contact-email{
+.contact-email {
     width: 100%;
     transition: 0.5s;
 }
 
-.contact-email:hover{
+.contact-email:hover {
     filter: drop-shadow(1px 1px 3px #ff0000b7);
     transition: 0.5s;
 }
 
-.contact-github{
+.contact-github {
     width: 100%;
     transition: 0.5s;
 }
 
-.contact-github:hover{
+.contact-github:hover {
     filter: drop-shadow(1px 1px 5px #ff0000b7);
     transition: 0.5s;
 }
 
-.contact-cv{
+.contact-cv {
     width: 100%;
     transition: 0.5s;
 }
 
-.contact-cv:hover{
+.contact-cv:hover {
     filter: drop-shadow(1px 1px 5px #ff0000b7);
     transition: 0.5s;
 }
 
-.cv{
+.cv {
     font-size: 1.5vw;
 }
 
-.responsive-space{
+.responsive-space {
     display: none;
 }
 
 /* Experience buttons styles */
-.button-arounder {
+.button-arounder1 {
 
-background: hsl(0, 0%, 29%);
-color: hsl(190deg, 10%, 95%);
+    background: hsl(0, 0%, 0%);
+    color: hsl(190deg, 10%, 95%);
 
-box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
-transform: translateY(0);
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 
---dur: .15s;
---delay: .15s;
---radius: 16px;
+    --dur: .15s;
+    --delay: .15s;
+    --radius: 16px;
 
-transition:
-    border-top-left-radius var(--dur) var(--delay) ease-out,
-    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
-    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
-    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
-    box-shadow calc(var(--dur) * 4) ease-out,
-    transform calc(var(--dur) * 4) ease-out,
-    background calc(var(--dur) * 4) steps(4, jump-end);
+    transition:
+        border-top-left-radius var(--dur) var(--delay) ease-out,
+        border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+        border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+        border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+        box-shadow calc(var(--dur) * 4) ease-out,
+        transform calc(var(--dur) * 4) ease-out,
+        background calc(var(--dur) * 4) steps(4, jump-end);
 }
 
-.button-arounder:hover,
-.button-arounder:focus {
-box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
-transform: translateY(-4px);
-background: hsl(230deg, 50%, 45%);
-border-top-left-radius: var(--radius);
-border-top-right-radius: var(--radius);
-border-bottom-left-radius: var(--radius);
-border-bottom-right-radius: var(--radius);
+.button-arounder1:hover,
+.button-arounder1:focus {
+    box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(-4px);
+    background: hsl(0, 100%, 40%);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
 }
 
 .button-arounder2 {
 
-background: hsl(0, 0%, 0%);
-color: hsl(190deg, 10%, 95%);
+    background: hsl(0, 0%, 0%);
+    color: hsl(190deg, 10%, 95%);
 
-box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
-transform: translateY(0);
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 
---dur: .15s;
---delay: .15s;
---radius: 16px;
+    --dur: .15s;
+    --delay: .15s;
+    --radius: 16px;
 
-transition:
-    border-top-left-radius var(--dur) var(--delay) ease-out,
-    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
-    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
-    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
-    box-shadow calc(var(--dur) * 4) ease-out,
-    transform calc(var(--dur) * 4) ease-out,
-    background calc(var(--dur) * 4) steps(4, jump-end);
+    transition:
+        border-top-left-radius var(--dur) var(--delay) ease-out,
+        border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+        border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+        border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+        box-shadow calc(var(--dur) * 4) ease-out,
+        transform calc(var(--dur) * 4) ease-out,
+        background calc(var(--dur) * 4) steps(4, jump-end);
 }
 
 .button-arounder2:hover,
 .button-arounder2:focus {
-box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
-transform: translateY(-4px);
-background: hsl(0, 100%, 40%);
-border-top-left-radius: var(--radius);
-border-top-right-radius: var(--radius);
-border-bottom-left-radius: var(--radius);
-border-bottom-right-radius: var(--radius);
+    box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(-4px);
+    background: hsl(0, 100%, 40%);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
 }
 
-@media (max-width: 900px){
-    .not-at-responsive{
+@media (max-width: 900px) {
+    .not-at-responsive {
         display: none;
     }
-    .hero-container{
+
+    .hero-container {
         margin-top: 13%;
     }
-    .hero-bg{
+
+    .hero-bg {
         height: 100%;
         top: 0;
     }
-    .sections{
+
+    .sections {
         display: none;
     }
-    .hero-img{
+
+    .hero-img {
         margin-left: 3%;
         width: 47%;
     }
-    .info{
+
+    .info {
         margin-top: 5%;
     }
-    .info h1{
+
+    .info h1 {
         font-size: 2.8vw;
     }
-    .line{
+
+    .line {
         font-size: 2.5vw;
     }
-    .hello{
+
+    .hello {
         font-size: 2.5vw;
     }
-    .presentation{
+
+    .presentation {
         margin-top: 12%;
         font-size: 2vw;
     }
-    .responsive-space{
+
+    .responsive-space {
         display: block;
     }
-    .location{
+
+    .location {
         margin-top: 10%;
         font-size: 1.7vw;
     }
-    .socials img{
+
+    .socials img {
         width: 70%;
     }
-    .socials img:last-child{
+
+    .socials img:last-child {
         margin-left: 30%;
     }
-    #skills{
+
+    #skills {
         margin-top: 20%;
     }
-    #skills h1{
+
+    #skills h1 {
         font-size: 3vw;
         margin-left: 38%;
         margin-right: 38%;
     }
-    .bars{
+
+    .bars {
         margin-top: 15%;
     }
-    .bars p{
+
+    .bars p {
         font-size: 2.4vw;
         margin-top: 19%;
     }
-    .bar{
+
+    .bar {
         height: 15px;
     }
-    .firstbarinside{
+
+    .firstbarinside {
         height: 15px;
     }
-    .secondbarinside{
+
+    .secondbarinside {
         height: 15px;
     }
-    .thirdbarinside{
+
+    .thirdbarinside {
         height: 15px;
     }
-    .fourthbarinside{
+
+    .fourthbarinside {
         height: 15px;
     }
-    .fifthbarinside{
+
+    .fifthbarinside {
         height: 15px;
     }
-    .sixthbarinside{
+
+    .sixthbarinside {
         height: 15px;
     }
-    #formation{
+
+    #formation {
         margin-top: 15%;
     }
-    #formation h1{
+
+    #formation h1 {
         font-size: 3vw;
         margin-left: 38%;
         margin-right: 38%;
     }
-    .formation-container{
+
+    .formation-container {
         width: 70%;
         margin-top: 15%;
         margin-left: 15%;
         display: block;
     }
-    .formation-block{
+
+    .formation-block {
         width: 100%;
     }
-    .formation-block:last-child{
+
+    .formation-block:last-child {
         margin-top: 10%;
     }
-    .formation-2nd{
+
+    .formation-2nd {
         margin-left: 0%;
     }
-    .formation-3rd{
+
+    .formation-3rd {
         width: 70%;
         margin-left: 15%;
     }
-    .formation-3rd img{
+
+    .formation-3rd img {
         width: 74%;
     }
-    .titulation{
+
+    .titulation {
         font-size: 1vw;
     }
-    .formation-block p{
+
+    .formation-block p {
         font-size: 2vw;
     }
-    #experience{
+
+    #experience {
         margin-top: 15%;
     }
-    #experience h1{
+
+    #experience h1 {
         font-size: 3vw;
         margin-left: 38%;
         margin-right: 38%;
     }
-    .experience-block1{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 15%;
-    }
-    .glassmorphism-block{
-        display: none;
-    }
-    .glassmorphism-block2{
-        display: none;
-    }
-    .job-title{
+
+    .job-title {
         font-size: 2.5vw;
     }
-    .job-info p{
+
+    .job-info p {
         font-size: 2vw;
     }
-    .experience-block1:hover .job{
-        color: black;
-    }
-    .experience-block1 button{
-        height: 17%;
-        width: 55%;
-        font-size: 2vw;
-    }
-    .experience-block1 img{
-        width: 50%;
-        margin-top: 7%;
-    }
-    .experience-block2{
+
+    .experience-block {
         margin-top: 30%
     }
-    .experience-block3{
-        margin-top: 30%
+
+    .experience-block2 {
+        margin-top: 47%
     }
-    .wave{
+
+    .wave {
+        margin-top: 28%;
+    }
+
+    .clouds {
         margin-top: 28%
     }
-    .clouds{
-        margin-top: 28%
-    }
-    .bucket{
+
+    .bucket {
         width: 13%;
         margin-top: 19%;
     }
-    .experience-block2 img{
+
+    .experience-block img {
         margin-left: 10%;
         width: 50%;
     }
-    .experience-block3 img{
+
+    .experience-block2 img {
         margin-left: 10%;
         width: 50%;
     }
-    .metaverses-info{
+
+    .scientia-info {
         margin-left: 50%;
-        margin-top: 0%;
+        margin-top: 3%;
     }
-    .metaverses-info h1{
+
+    .scientia-info h1 {
         line-height: 120%;
         font-size: 1.8vw;
     }
-    .metaverses-info span{
+
+    .scientia-info span {
         font-size: 3vw;
     }
-    ul{
+
+    ul {
         display: none;
     }
-    .button-arounder2{
+
+    .button-arounder1 {
         margin-top: 0%;
         margin-left: 35%;
         font-size: 2vw;
         height: 25px;
         width: 50%;
     }
-    .celebrating{
+    .button-arounder2 {
+        margin-top: 0%;
+        margin-left: 35%;
+        font-size: 2vw;
+        height: 25px;
+        width: 50%;
+    }
+
+    .celebrating {
         margin-top: -62%;
         height: 90%;
     }
-    #contact{
+
+    #contact {
         margin-top: 40%
     }
-    #contact h1{
+
+    #contact h1 {
         font-size: 3vw;
         margin-left: 22%;
     }
-    .contact-container{
+
+    .contact-container {
         width: 70%;
         margin-left: 27%;
     }
-    
+
 }
