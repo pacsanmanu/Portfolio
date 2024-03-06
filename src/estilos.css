@@ -500,8 +500,9 @@ main {
 }
 
 .clouds {
+    margin-top: 20%;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     width: 100%;
     height: auto;
 }
@@ -529,7 +530,7 @@ main {
 .experience-block2 {
     display: flex;
     width: 100%;
-    margin-top: 22%;
+    margin-top: 20%;
 }
 
 #proxya-info {
@@ -539,13 +540,13 @@ main {
 .experience-block2 img {
     width: 45%;
     border-radius: 20px;
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(90%);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(100%);
     margin-left: 15%;
     transition: 2s !important;
 }
 
 .experience-block2 img:hover {
-    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.527)) grayscale(0%);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.527)) grayscale(0%);
     transition: 2s !important;
 }
 
@@ -599,7 +600,7 @@ ul {
 .celebrating {
     z-index: -3;
     position: absolute;
-    margin-top: -22%;
+    margin-top: -12%;
     height: 100%;
     width: 100%;
 }
@@ -751,7 +752,7 @@ ul {
     border-bottom-right-radius: var(--radius);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .not-at-responsive {
         display: none;
     }
@@ -928,7 +929,7 @@ ul {
     }
 
     .experience-block2 {
-        margin-top: 47%
+        margin-top: 50%
     }
 
     .wave {
@@ -936,7 +937,7 @@ ul {
     }
 
     .clouds {
-        margin-top: 28%
+        margin-top: 54%
     }
 
     .bucket {
@@ -988,7 +989,7 @@ ul {
     }
 
     .celebrating {
-        margin-top: -62%;
+        margin-top: -64%;
         height: 90%;
     }
 
