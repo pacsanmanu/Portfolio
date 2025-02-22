@@ -136,6 +136,7 @@ main {
     display: grid;
     margin-top: 8%;
     width: 20%;
+    user-select:none;
 }
 
 .s1,
@@ -623,6 +624,7 @@ ul {
     margin-left: 34.5%;
     font-size: 1vw;
     display: flex;
+    user-select:none;
 }
 
 .contact-container a {
